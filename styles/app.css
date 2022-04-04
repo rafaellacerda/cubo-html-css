@@ -1,62 +1,62 @@
-* { 
-    box-sizing: border-box; 
-    padding: 0;
-    margin: 0;
-  }
-  
-  .tela {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: #F1F1F1;
-  }
-  
-  .container {
-    width: 200px;
-    height: 200px;
-    margin: 80px;
-    perspective: 400px;
-  }
-  
-  .cubo {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: translateZ(-50px);
-    transition: transform 1s;
-  }
-  
-  .cubo__faces {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #FFF;
-    font-size: 3em;
-    color: #FFF;
-    background: rgba(230, 96, 45, 0.61);
-  }
-  
-  .cubo__faces--frente { 
-    transform: rotateY(0deg) translateZ(100px); 
-  }
-  .cubo__faces--direita { 
-    transform: rotateY(90deg) translateZ(100px); 
-  }
-  .cubo__faces--tras { 
-    transform: rotateY(180deg) translateZ(100px); 
-  }
-  .cubo__faces--esquerda { 
-    transform: rotateY(-90deg) translateZ(100px); 
-  }
-  .cubo__faces--topo { 
-    transform: rotateX(90deg) translateZ(100px); 
-  }
-  .cubo__faces--baixo { 
-    transform: rotateX(-90deg) translateZ(100px); 
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.tela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  perspective: 400px;
+}
+
+.cubo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.cubo__faces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #fff;
+  font-size: 3em;
+  color: #fff;
+  background: rgba(230, 96, 45, 0.61);
+}
+
+.cubo__faces--frente {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.cubo__faces--direita {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cubo__faces--tras {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.cubo__faces--esquerda {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.cubo__faces--topo {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.cubo__faces--baixo {
+  transform: rotateX(-90deg) translateZ(100px);
+}
