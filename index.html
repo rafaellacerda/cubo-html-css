@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubo with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/app.css" />
+  </head>
+  <body>
+    <div class="tela" onMouseOver="moverCubo(event)">
+      <div class="container">
+        <div class="cubo">
+          <div class="cubo__faces cubo__faces--frente">1</div>
+          <div class="cubo__faces cubo__faces--tras">2</div>
+          <div class="cubo__faces cubo__faces--direita">3</div>
+          <div class="cubo__faces cubo__faces--esquerda">4</div>
+          <div class="cubo__faces cubo__faces--topo">5</div>
+          <div class="cubo__faces cubo__faces--baixo">6</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    (() => {
+      moverCubo = (evt) => {
+        const cubo = document.querySelector(".cubo");
+        const x = evt.offsetX;
+        const y = evt.offsetY;
+
+        cubo.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+      };
+    })();
+  </script>
+</html>
